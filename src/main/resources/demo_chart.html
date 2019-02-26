@@ -1,0 +1,67 @@
+<html>
+
+<script type="text/javascript">
+    var misParam ={
+        miMargen : 0.80,
+        separZonas : 0.05,
+        tituloGraf : "Title of Chart",
+        tituloEjeX : "Country",
+        tituloEjeY : "Backlog Count",
+        nLineasDiv : 10,
+        mysColores :[
+                        ["rgba(93,18,18,1)","rgba(196,19,24,1)"],  //red
+                        ["rgba(171,115,51,1)","rgba(251,163,1,1)"], //yellow
+                    ],
+        anchoLinea : 2,
+    };
+
+    obtener_datos_tabla_convertir_en_array('tableConten',graficarBarras,'chart','750','480',misParam,true);
+</script>
+<head>
+
+<script type="text/javascript" src="js/HTMLtable2chart/graficarBarras.js"></script>
+<script type="text/javascript" src="js/HTMLtable2chart/tabla2array.js"></script>
+</head>
+<body>
+
+
+
+<table id="tableConten">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Backlog Count</th>
+        </tr>
+    </thead>
+    
+    <tbody>
+        <tr>
+            <td>United States</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Western Europe</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Canada</td>
+            <td>150</td>
+        </tr>
+        <tr>
+            <td>Germany</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>France</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>Mexico</td>
+            <td>300</td>
+        </tr>
+    </tbody>
+</table>
+
+<canvas id="chart" width="750" height="480" style="border: 1px solid black;">Canvas is not supported</canvas>
+</body>
+</html>
